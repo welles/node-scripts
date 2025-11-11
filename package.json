@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "playwright-install": "npx playwright install"
+    "playwright-install": "npx playwright install",
+    "playwright-codegen": "npx playwright codegen --target=typescript"
   },
   "keywords": [],
   "author": "",
