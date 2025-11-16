@@ -1,3 +1,3 @@
-import { addEmojiToTodoistTaskTitles } from "./todoist";
+import { getNotionIdeas } from "./notion";
 
-addEmojiToTodoistTaskTitles().catch(console.error);
+getNotionIdeas().catch(console.error);
