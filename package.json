@@ -2,7 +2,7 @@
   "name": "node-scripts",
   "private": true,
   "scripts": {
-    "todoist": "npx ts-node ./src/todoist.ts"
+    "main": "npx ts-node ./src/main.ts"
   },
   "dependencies": {
     "@doist/todoist-api-typescript": "6.1.7",
