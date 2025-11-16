@@ -1,0 +1,7 @@
+<Project>
+  <ItemGroup>
+    <None Include="**" />
+    <None Remove="**\node_modules\**" />
+    <None Remove="*.slnx" />
+  </ItemGroup>
+</Project>
