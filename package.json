@@ -1,6 +1,7 @@
 {
   "name": "node-scripts",
   "private": true,
+  "type": "commonjs",
   "scripts": {
     "main": "npx ts-node ./src/main.ts"
   },
