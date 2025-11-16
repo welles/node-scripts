@@ -1,5 +1,5 @@
 import { TodoistApi } from "@doist/todoist-api-typescript";
-import { getEmojiFromTaskContent } from "./openai";
+import { getEmojiFromTitle } from "./openai";
 
 export async function addEmojiToTodoistTaskTitles() {
   const taskRegex = /^[A-Za-z0-9].+/;
@@ -20,7 +20,7 @@ export async function addEmojiToTodoistTaskTitles() {
     if (taskRegex.test(task.content)) {
       console.log(`Adding emoji to task: "${task.content}"`);
 
-      const emoji = await getEmojiFromTaskContent(task.content);
+      const emoji = await getEmojiFromTitle(task.content, "📋");
 
       await api.updateTask(task.id, { content: `${emoji} ${task.content}` });
     }

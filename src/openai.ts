@@ -1,7 +1,8 @@
 import { OpenAI } from "openai";
 
-export async function getEmojiFromTaskContent(
+export async function getEmojiFromTitle(
   content: string,
+  defaultEmoji: string,
 ): Promise<string> {
   const apiKey = process.env.OPENAI_API_KEY;
 
@@ -11,8 +12,8 @@ export async function getEmojiFromTaskContent(
 
   const client = new OpenAI({ apiKey });
 
-  const prompt = `You are an assistant that outputs a single emoji representing the following task: "${content}".
-     If the task does not suggest any specific emoji, respond with the default emoji "📋".
+  const prompt = `You are an assistant that outputs a single emoji representing the following title of a task, note or idea: "${content}".
+     If the title does not suggest any specific emoji, respond with the default emoji "${defaultEmoji}".
      Only respond with the emoji, nothing else.`;
 
   const response = await client.responses.create({
