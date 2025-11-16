@@ -22,9 +22,4 @@
       </profile-state>
     </entry>
   </component>
-  <component name="TypeScriptCompiler">
-    <option name="recompileOnChanges" value="true" />
-    <option name="showAllErrors" value="true" />
-    <option name="useTypesFromServer" value="true" />
-  </component>
 </project>
