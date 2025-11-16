@@ -13,7 +13,7 @@ export async function addEmojiToTodoistTaskTitles() {
   const api = new TodoistApi(apiKey);
 
   const tasks = await api.getTasksByFilter({
-    query: "#Inbox"
+    query: "#Inbox",
   });
 
   for (const task of tasks.results) {
