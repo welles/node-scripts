@@ -9,6 +9,7 @@
     "@doist/todoist-api-typescript": "6.1.7",
     "@types/node": "24.10.1",
     "openai": "6.9.0",
+    "prettier": "3.6.2",
     "ts-node": "10.9.2",
     "typescript": "5.9.3"
   }
