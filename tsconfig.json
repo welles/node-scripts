@@ -2,5 +2,6 @@
   "compilerOptions": {
     "module": "preserve",
     "target": "esnext",
+    "strict": true
   }
 }
