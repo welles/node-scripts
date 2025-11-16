@@ -1,19 +1,8 @@
 {
-  "name": "scripts",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "playwright-install": "npx playwright install",
-    "playwright-codegen": "npx playwright codegen --target=typescript"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
-  "devDependencies": {
-    "@types/node": "24.10.0",
-    "playwright": "1.56.1",
+  "name": "node-scripts",
+  "private": true,
+  "dependencies": {
+    "@types/node": "24.10.1",
     "ts-node": "10.9.2",
     "typescript": "5.9.3"
   }
